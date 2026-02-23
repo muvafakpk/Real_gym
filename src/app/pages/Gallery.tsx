@@ -105,12 +105,12 @@ const galleryRef = useRef<HTMLDivElement | null>(null);
       title: "body",
     },
      {
-      url: t2,
+      url: t3,
       category: "transformations",
       title: "body",
     },
      {
-      url: t3,
+      url: t2,
       category: "transformations",
       title: "body",
     },
