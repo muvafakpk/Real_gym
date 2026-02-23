@@ -44,62 +44,71 @@ export function Header() {
         }`}
       >
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex items-center justify-between h-20 lg:h-24">
-            {/* Logo */}
-            <Link to="/" className="flex items-center space-x-3">
-              <img
-                src={logoImage}
-                alt="The Real Gym Logo"
-                className="h-12 lg:h-16 w-auto"
-              />
-            </Link>
+          <div className="flex items-center justify-between h-20 lg:h-24 relative">
 
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className={`relative py-2 transition-colors duration-300 ${
-                    location.pathname === link.path
-                      ? "text-[#86BC25]"
-                      : "text-white hover:text-[#FFD700]"
-                  }`}
-                >
-                  {link.label}
-                  {location.pathname === link.path && (
-                    <motion.div
-                      layoutId="underline"
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#86BC25] to-[#FFD700]"
-                    />
-                  )}
-                </Link>
-              ))}
-            </nav>
+  {/* Logo - Left */}
+  <Link to="/" className="flex items-center space-x-3 z-10">
+    <img
+      src={logoImage}
+      alt="The Real Gym Logo"
+      className="h-10 lg:h-16 w-auto"
+    />
+  </Link>
 
-            {/* CTA Button - Desktop */}
-            <div className="hidden lg:flex items-center space-x-4">
-              <Link
-                to="/membership"
-                className="px-6 py-3 bg-gradient-to-r from-[#86BC25] to-[#FFD700] text-black font-semibold rounded-md hover:shadow-lg hover:shadow-[#86BC25]/50 transition-all duration-300 transform hover:scale-105"
-              >
-                View Now
-              </Link>
-            </div>
+  {/* Center Gym Name - Mobile Only */}
+  <h1 className="absolute left-1/2 transform -translate-x-1/2 text-lg sm:text-xl font-extrabold lg:hidden">
+    <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
+      The Real Gym
+    </span>
+  </h1>
 
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden text-white p-2"
-              aria-label="Toggle menu"
-            >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
-            </button>
-          </div>
+  {/* Desktop Navigation */}
+  <nav className="hidden lg:flex items-center space-x-8">
+    {navLinks.map((link) => (
+      <Link
+        key={link.path}
+        to={link.path}
+        className={`relative py-2 transition-colors duration-300 ${
+          location.pathname === link.path
+            ? "text-[#86BC25]"
+            : "text-white hover:text-[#FFD700]"
+        }`}
+      >
+        {link.label}
+        {location.pathname === link.path && (
+          <motion.div
+            layoutId="underline"
+            className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#86BC25] to-[#FFD700]"
+          />
+        )}
+      </Link>
+    ))}
+  </nav>
+
+  {/* CTA Button - Desktop */}
+  <div className="hidden lg:flex items-center space-x-4">
+    <Link
+      to="/membership"
+      className="px-6 py-3 bg-gradient-to-r from-[#86BC25] to-[#FFD700] text-black font-semibold rounded-md hover:shadow-lg hover:shadow-[#86BC25]/50 transition-all duration-300 transform hover:scale-105"
+    >
+      View Now
+    </Link>
+  </div>
+
+  {/* Mobile Menu Button - Right */}
+  <button
+    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+    className="lg:hidden text-white p-2 z-10"
+    aria-label="Toggle menu"
+  >
+    {isMobileMenuOpen ? (
+      <X className="w-6 h-6" />
+    ) : (
+      <Menu className="w-6 h-6" />
+    )}
+  </button>
+
+</div>
         </div>
       </motion.header>
 
