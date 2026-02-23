@@ -1,0 +1,107 @@
+/* The Real Gym Custom Theme */
+:root {
+  /* Gym brand colors */
+  --gym-green: #86BC25;
+  --gym-yellow: #FFD700;
+  --gym-black: #0a0a0a;
+  --gym-dark-gray: #1a1a1a;
+  --gym-gray: #2a2a2a;
+  --gym-light-gray: #666666;
+  
+  /* Gradients */
+  --gym-gradient: linear-gradient(135deg, var(--gym-green) 0%, var(--gym-yellow) 100%);
+  --gym-gradient-overlay: linear-gradient(135deg, rgba(134, 188, 37, 0.9) 0%, rgba(255, 215, 0, 0.9) 100%);
+}
+
+/* Override body background for dark theme */
+body {
+  background-color: var(--gym-black);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gym-dark-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gym-green);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gym-yellow);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: var(--gym-green);
+  color: #000000;
+}
+
+::-moz-selection {
+  background: var(--gym-green);
+  color: #000000;
+}
+
+/* Custom animations */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(134, 188, 37, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(134, 188, 37, 0.8);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Gradient text animation */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, #86BC25, #FFD700, #86BC25);
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+/* Disable text selection on buttons and interactive elements */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--gym-green);
+  outline-offset: 2px;
+}
+
+/* Image loading optimization */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
