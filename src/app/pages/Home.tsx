@@ -220,7 +220,7 @@ const sliderSettings = {
           border border-white/20 bg-white/5 backdrop-blur-md
           hover:bg-white/10 transition-all duration-300"
         >
-          Book Free Trial
+          Send Message
         </Link>
 
       </div>
