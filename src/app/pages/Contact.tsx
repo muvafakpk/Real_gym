@@ -5,7 +5,7 @@ import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
 import { Textarea } from "../components/ui/textarea";
 import { Button } from "../components/ui/button";
-import logoImage from "../../assets/real1.png";
+import logoImage from "../../assets/TheReal.jpeg";
 import { supabase } from "../../supabase";
 
 export default function Contact() {
@@ -114,35 +114,37 @@ const handleSubmit = async (e: React.FormEvent) => {
         </motion.div>
       </section>
 
-      {/* Contact Info Cards */}
-      <section className="py-20 bg-[#0a0a0a]">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {contactInfo.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="bg-[#1a1a1a] p-8 rounded-lg border border-[#2a2a2a] hover:border-[#86BC25] transition-all duration-300"
-              >
-                <div className="text-[#86BC25] mb-6">{item.icon}</div>
-                <h3 className="text-2xl text-white mb-4" style={{ fontWeight: 700 }}>
-                  {item.title}
-                </h3>
-                <div className="space-y-2">
-                  {item.info.map((line, idx) => (
-                    <p key={idx} className="text-gray-400">
-                      {line}
-                    </p>
-                  ))}
-                </div>
-              </motion.div>
+     {/* Contact Info Cards */}
+<section className="py-20 bg-[#0a0a0a]">
+  <div className="container mx-auto px-4 lg:px-8">
+    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      {contactInfo.map((item, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: index * 0.1, duration: 0.6 }}
+          className="bg-[#1a1a1a] p-6 rounded-lg border border-[#2a2a2a] hover:border-[#86BC25] transition-all duration-300"
+        >
+          <div className="text-[#86BC25] mb-4">{item.icon}</div>
+
+          <h3 className="text-lg md:text-2xl text-white mb-3 font-bold">
+            {item.title}
+          </h3>
+
+          <div className="space-y-1">
+            {item.info.map((line, idx) => (
+              <p key={idx} className="text-gray-400 text-sm md:text-base">
+                {line}
+              </p>
             ))}
           </div>
-        </div>
-      </section>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Contact Form & Map */}
       <section className="py-20 lg:py-32 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">

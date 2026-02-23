@@ -4,6 +4,7 @@ import { Check, X, ArrowRight } from "lucide-react";
 import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
 import { Button } from "../components/ui/button";
+import member from "../../assets/member.jpeg";
 
 export default function Membership() {
   const [formData, setFormData] = useState({
@@ -141,7 +142,7 @@ export default function Membership() {
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1761971975769-97e598bf526b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxneW0lMjBpbnRlcmlvciUyMG1vZGVybnxlbnwxfHx8fDE3NzE2ODI1MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+            src={member}
             alt="Membership"
             className="w-full h-full object-cover"
           />
