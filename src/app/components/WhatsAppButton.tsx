@@ -1,15 +1,17 @@
-import { MessageCircle } from "lucide-react";
-
 export function WhatsAppButton() {
   return (
     <a
       href="https://wa.me/919447771658"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-gradient-to-r from-[#25D366] to-[#128C7E] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 group"
+      className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
       aria-label="Chat on WhatsApp"
     >
-      <MessageCircle className="w-7 h-7 text-white group-hover:scale-110 transition-transform" />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+        className="w-7 h-7"
+      />
     </a>
   );
 }
