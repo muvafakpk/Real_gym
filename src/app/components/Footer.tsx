@@ -176,7 +176,7 @@ export function Footer() {
                 <Clock className="w-5 h-5 text-[#86BC25] flex-shrink-0 mt-0.5" />
                 <div>
                   <p>Mon - Sat: 5:00 AM - 10:00 PM</p>
-                  <p>Sunday: 6:00 AM - 8:00 PM</p>
+                  
                 </div>
               </li>
             </ul>

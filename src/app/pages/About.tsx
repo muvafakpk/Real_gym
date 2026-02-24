@@ -109,39 +109,61 @@ export default function About() {
   <div className="container mx-auto px-4 lg:px-8">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-     <motion.div
-  initial={{ opacity: 0, x: -50 }}
-  whileInView={{ opacity: 1, x: 0 }}
+ <motion.div
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true }}
   transition={{ duration: 0.8 }}
-  className="text-center"
+  className="relative max-w-3xl mx-auto"
 >
-  <h2
-    className="text-4xl md:text-5xl mb-6 font-extrabold"
-  >
-    Our{" "}
-    <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
-      Story
-    </span>
-  </h2>
+  {/* Glow */}
+  <div className="absolute inset-0 bg-gradient-to-r from-[#86BC25]/20 to-[#FFD700]/20 blur-2xl opacity-30 rounded-3xl"></div>
 
-  <div className="space-y-4 text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
-    <p>
-      Founded by Abu Sinaan in 2019, The Real Gym started with a vision
-      to create North Malabar's premier fitness destination where everyone -
-      regardless of their fitness level - could achieve their health and wellness goals.
-    </p>
+  {/* Premium Card */}
+  <div className="relative bg-gradient-to-br from-[#111111] to-[#1a1a1a] border border-[#2a2a2a] rounded-3xl p-8 md:p-12 shadow-2xl backdrop-blur-md text-center">
 
-    <p>
-      What began as a passion project has grown into a 6400+ sq. ft.
-      state-of-the-art facility serving over 3,000 members.
-    </p>
+    {/* Accent Line CENTERED */}
+    <div className="flex justify-center mb-6">
+      <div className="w-20 h-1 bg-gradient-to-r from-[#86BC25] to-[#FFD700] rounded-full"></div>
+    </div>
 
-    <p>
-      Our commitment to excellence is reflected in our team of 8+
-      certified trainers, premium equipment, and comprehensive programs
-      including Zumba, Aerobics, and Tabata.
-    </p>
+    {/* Centered Heading */}
+    <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-white">
+      Our{" "}
+      <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
+        Story
+      </span>
+    </h2>
+
+    {/* Centered Content */}
+    <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+
+      <p>
+        Founded by <span className="text-[#86BC25] font-semibold">Abu Sinaan</span> in 2019,
+        The Real Gym started with a bold vision to create North Malabar's
+        premier fitness destination where everyone — regardless of their
+        fitness level — could achieve their health and wellness goals.
+      </p>
+
+      <p>
+        What began as a passion project has grown into a
+        <span className="text-white font-semibold"> 6400+ sq. ft. </span>
+        state-of-the-art facility serving over
+        <span className="text-white font-semibold"> 3,000 members</span>.
+      </p>
+
+      <p>
+        Our commitment to excellence is reflected in our team of
+        <span className="text-[#FFD700] font-semibold"> 8+ certified trainers</span>,
+        premium equipment, and comprehensive programs including
+        Zumba, Aerobics, and Tabata.
+      </p>
+
+    </div>
+
+    {/* Bottom Accent */}
+    <div className="mt-10 h-px bg-gradient-to-r from-transparent via-[#86BC25]/50 to-transparent"></div>
+
   </div>
 </motion.div>
    

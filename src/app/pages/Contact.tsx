@@ -93,7 +93,6 @@ const handleSubmit = async (e: React.FormEvent) => {
       title: "Working Hours",
       info: [
         "Mon - Sat: 5:00 AM - 10:00 PM",
-        "Sunday: 6:00 AM - 8:00 PM",
         "Public Holidays: Special Hours",
       ],
     },
@@ -390,7 +389,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               {
                 question: "What are your gym timings?",
                 answer:
-                  "We're open Monday to Saturday from 5:00 AM to 10:00 PM, and Sunday from 6:00 AM to 8:00 PM. Premium members get 24/7 access.",
+                  "We're open Monday to Saturday from 5:00 AM to 10:00 PM.",
               },
               {
                 question: "Do you offer free trials?",

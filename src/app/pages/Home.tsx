@@ -78,7 +78,7 @@ export default function Home() {
     {
       icon: <CheckCircle className="w-8 h-8" />,
       title: "Flexible Timings",
-      description: "Open 7 days a week from 5 AM",
+      description: "Open 6 days a week from 5 AM",
     },
   ];
 
