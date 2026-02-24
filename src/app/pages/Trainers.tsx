@@ -44,7 +44,9 @@ export default function Trainers() {
       description:
         "Former competitive powerlifter with expertise in strength training and muscle building. Focuses on proper form and progressive overload.",
       image: sinanImg1,
+  
       email: "rajesh@therealgym.in",
+           objectPosition: "object-[center_top]"
     },
     {
       name: "Sharanya",
