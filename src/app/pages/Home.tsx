@@ -166,7 +166,7 @@ const sliderSettings = {
  <div className="absolute w-96 h-96 bg-[#86BC25]/20 blur-[120px] rounded-full top-20 left-1/2 -translate-x-1/2" />
 
   {/* Content */}
-  <div className="relative z-10 container mx-auto px-6 pt-28 pb-20 text-center">
+  <div className="relative z-10 container mx-auto px-6 pt-16 md:pt-24 lg:pt-28 pb-20 text-center">
 
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -211,7 +211,7 @@ const sliderSettings = {
           hover:scale-105 transition-all duration-300
           shadow-lg hover:shadow-[#86BC25]/40"
         >
-          View Membership Plans →
+          Get Started Now →
         </Link>
 
         <Link
