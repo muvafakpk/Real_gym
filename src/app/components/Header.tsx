@@ -56,12 +56,7 @@ export function Header() {
     />
   </Link>
 
-  {/* Center Gym Name - Mobile Only */}
-  <h1 className="absolute left-1/2 transform -translate-x-1/2 text-lg sm:text-xl font-extrabold lg:hidden">
-    <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
-      The Real Gym
-    </span>
-  </h1>
+ 
 
   {/* Desktop Navigation */}
   <nav className="hidden lg:flex items-center space-x-8">
