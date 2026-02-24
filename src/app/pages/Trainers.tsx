@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
-import { Award, Instagram, Mail } from "lucide-react";
+import { Award, Instagram, Mail, ArrowRight } from "lucide-react";
 import sinanImg from "../../assets/sinan.png";
 import sinanImg1 from "../../assets/sanal.png";
 import sinanImg2 from "../../assets/sharanya.png";
 import sinanImg3 from "../../assets/vaishnav.png";
+import coach from "../../assets/coach.jpeg";
+import { Link } from "react-router-dom";
 
 export default function Trainers() {
   const trainers = [
@@ -30,6 +32,17 @@ export default function Trainers() {
       image: sinanImg3,
       email: "arjun@therealgym.in",
     },
+     {
+      name: "Sanal",
+      role: "Strength & Conditioning Coach",
+      specialty: "Powerlifting & Muscle Building",
+      experience: "7 Years",
+      certifications: ["NSCA Certified", "Olympic Lifting Coach", "Sports Nutrition"],
+      description:
+        "Former competitive powerlifter with expertise in strength training and muscle building. Focuses on proper form and progressive overload.",
+      image: sinanImg1,
+      email: "rajesh@therealgym.in",
+    },
     {
       name: "Sharanya",
       role: "Group Fitness Instructor",
@@ -42,17 +55,52 @@ export default function Trainers() {
       instagram: "@priya_fitness",
       email: "priya@therealgym.in",
     },
+   
     {
-      name: "Sanal",
-      role: "Strength & Conditioning Coach",
-      specialty: "Powerlifting & Muscle Building",
-      experience: "7 Years",
-      certifications: ["NSCA Certified", "Olympic Lifting Coach", "Sports Nutrition"],
-      description:
-        "Former competitive powerlifter with expertise in strength training and muscle building. Focuses on proper form and progressive overload.",
-      image: sinanImg1,
-      email: "rajesh@therealgym.in",
-    },
+  name: "Thabsheera",
+  role: "Group Fitness Instructor",
+  specialty: "Zumba & Aerobics",
+  experience: "4 Years",
+  certifications: [
+    "Certified Zumba Instructor",
+    "Aerobics Trainer Certification",
+    "Fitness Nutrition Basics"
+  ],
+  description:
+    "Energetic group fitness instructor specializing in Zumba and aerobics. Passionate about making workouts fun, engaging, and effective for all fitness levels.",
+  image: sinanImg1,
+  email: "thabsheera@therealgym.in",
+},
+{
+  name: "Mubashira",
+  role: "Personal Training Specialist",
+  specialty: "Weight Loss & Nutrition",
+  experience: "5 Years",
+  certifications: [
+    "Certified Personal Trainer",
+    "Weight Management Specialist",
+    "Nutrition & Diet Planning"
+  ],
+  description:
+    "Dedicated personal trainer focused on sustainable weight loss and customized nutrition plans. Helps clients build confidence while achieving long-term results.",
+  image: sinanImg1,
+  email: "mubashira@therealgym.in",
+},
+{
+  name: "Krishnaja",
+  role: "Personal Training Specialist",
+  specialty: "Yoga & Functional Training",
+  experience: "6 Years",
+  certifications: [
+    "Certified Yoga Trainer",
+    "Functional Training Coach",
+    "Mobility & Flexibility Specialist"
+  ],
+  description:
+    "Experienced yoga and functional training coach focused on flexibility, mobility, and overall body balance. Helps clients improve posture and prevent injuries.",
+  image: sinanImg1,
+  email: "krishnaja@therealgym.in",
+},
    
   ];
 
@@ -247,15 +295,15 @@ export default function Trainers() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 lg:py-32 bg-[#0a0a0a] relative overflow-hidden">
+      {/* CTA Banner Section */}
+      <section className="py-20 lg:py-32 relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaXRuZXNzJTIwd2VpZ2h0bGlmdGluZyUyMGJhcmJlbGx8ZW58MXx8fHwxNzcxNjgyNTE1fDA&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Join Now"
+            src={coach}
+            alt="CTA Background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/95 to-[#0a0a0a]/85"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/95 to-[#0a0a0a]/80"></div>
         </div>
 
         <motion.div
@@ -266,34 +314,36 @@ export default function Trainers() {
           className="container mx-auto px-4 lg:px-8 relative z-10 text-center"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6" style={{ fontWeight: 800 }}>
-            Ready to Train with the{" "}
+            Ready to Start Your{" "}
             <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
-              Best
+              Transformation
             </span>
             ?
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-            Book a free consultation with one of our expert trainers and start
-            your transformation today.
+            Join The Real Gym today and get access to world-class facilities,
+            expert trainers, and a supportive community.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <a
-              href="/membership"
-              className="px-10 py-5 bg-gradient-to-r from-[#86BC25] to-[#FFD700] text-black text-lg rounded-md hover:shadow-2xl hover:shadow-[#86BC25]/50 transition-all duration-300 transform hover:scale-105"
+            <Link
+              to="/membership"
+              className="px-10 py-5 bg-gradient-to-r from-[#86BC25] to-[#FFD700] text-black text-lg rounded-md hover:shadow-2xl hover:shadow-[#86BC25]/50 transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
               style={{ fontWeight: 700 }}
             >
-              View Now
-            </a>
-            <a
-              href="/contact"
+              View Membership Plans
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+            <Link
+              to="/contact"
               className="px-10 py-5 border-2 border-white text-white text-lg rounded-md hover:bg-white/10 transition-all duration-300 transform hover:scale-105"
               style={{ fontWeight: 700 }}
             >
-              Book Free Consultation
-            </a>
+              Contact Us
+            </Link>
           </div>
         </motion.div>
       </section>
+
     </div>
   );
 }

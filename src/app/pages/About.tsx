@@ -28,15 +28,34 @@ export default function About() {
       image: sinanImg3,
     },
     {
+      name: "Sanal",
+      role: "Personal Training Specialist",
+      specialty: "Weight Loss & Nutrition",
+      image: sinanImg1,
+    },
+    {
       name: "Sharanya",
+      role: "Personal Training Specialist",
+      specialty: "Weight Loss & Nutrition",
+       image: sinanImg2,
+    },
+     {
+      name: "Thabsheera",
       role: "Group Fitness Instructor",
       specialty: "Zumba & Aerobics",
        image: sinanImg2,
     },
-   {
-      name: "Sanal",
+   
+     {
+      name: "Mubashira",
       role: "Personal Training Specialist",
       specialty: "Weight Loss & Nutrition",
+      image: sinanImg1,
+    },
+     {
+      name: "Krishnaja",
+      role: "Personal Training Specialist",
+      specialty: "Yoga Trainer",
       image: sinanImg1,
     },
   ];

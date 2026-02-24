@@ -152,7 +152,7 @@ export function Header() {
                   <Link to="/contact#contact-form"
                     className="px-8 py-4 bg-gradient-to-r from-[#86BC25] to-[#FFD700] text-black font-semibold rounded-md text-xl"
                   >
-                    Messege Us
+                    Message Us
                   </Link>
                 </motion.div>
               </nav>
