@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router";
+import { Link, useLocation } from "react-router-dom";
+
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logoImage from "../../assets/real1.png";
@@ -148,11 +149,10 @@ export function Header() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: navLinks.length * 0.1 }}
                 >
-                  <Link
-                    to="/membership"
+                  <Link to="/contact#contact-form"
                     className="px-8 py-4 bg-gradient-to-r from-[#86BC25] to-[#FFD700] text-black font-semibold rounded-md text-xl"
                   >
-                    Join Now
+                    Messege Us
                   </Link>
                 </motion.div>
               </nav>

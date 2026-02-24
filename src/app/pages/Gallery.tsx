@@ -45,7 +45,7 @@ import t25 from "../../assets/t25.jpeg";
 export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 const galleryRef = useRef<HTMLDivElement | null>(null);
-  const categories = ["all", "body", "equipment", "classes", "transformations"];
+  const categories = ["all", "body", "equipment",  "transformations"];
 
   const images = [
     {
@@ -248,36 +248,12 @@ const galleryRef = useRef<HTMLDivElement | null>(null);
       category: "equipment",
       title: "Cardio Zone",
     },
-    {
-      url: "https://images.unsplash.com/photo-1758798458123-7b4fbcc92c1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncm91cCUyMGZpdG5lc3MlMjBjbGFzc3xlbnwxfHx8fDE3NzE2MDAxNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      category: "classes",
-      title: "Group Fitness Class",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1570456717698-41ac2f7157bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3hpbmclMjB0cmFpbmluZyUyMGd5bXxlbnwxfHx8fDE3NzE2ODI1MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      category: "classes",
-      title: "Boxing Training",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1540205453279-389ebbc43b5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXJzb25hbCUyMHRyYWluZXIlMjBjb2FjaGluZ3xlbnwxfHx8fDE3NzE2MDk2NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      category: "classes",
-      title: "Personal Training Session",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1669504243706-1df1f8d5dacd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaXRuZXNzJTIwdHJhbnNmb3JtYXRpb24lMjBiZWZvcmUlMjBhZnRlcnxlbnwxfHx8fDE3NzE1OTYyMjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      category: "transformations",
-      title: "Member Transformation",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWxlJTIwZ3ltJTIwdHJhaW5lcnxlbnwxfHx8fDE3NzE2ODI1MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      category: "transformations",
-      title: "Success Story",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1758875568932-0eefd3e60090?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWxlJTIwZml0bmVzcyUyMHRyYWluZXIlMjBwcm9mZXNzaW9uYWx8ZW58MXx8fHwxNzcxNjgyNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      category: "transformations",
-      title: "Body Transformation",
-    },
+    
+   
+   
+   
+  
+
     {
       url: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1080&h=720&fit=crop",
       category: "gym",
@@ -293,11 +269,7 @@ const galleryRef = useRef<HTMLDivElement | null>(null);
       category: "gym",
       title: "Workout Space",
     },
-    {
-      url: "https://images.unsplash.com/photo-1623874228601-f4193c7b1818?w=1080&h=720&fit=crop",
-      category: "classes",
-      title: "Yoga Class",
-    },
+
   ];
 
   const filteredImages =
@@ -337,7 +309,7 @@ const galleryRef = useRef<HTMLDivElement | null>(null);
       </section>
 
       {/* Category Filter */}
-      <section className="py-12 bg-[#0a0a0a] sticky top-20 z-40 border-b border-[#2a2a2a]">
+      <section className="py-12 bg-[#0a0a0a] sticky top-20 z-10 border-b border-[#2a2a2a]">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -475,52 +447,7 @@ const galleryRef = useRef<HTMLDivElement | null>(null);
         </div>
       </section>
 
-      {/* Visit Us CTA */}
-      <section className="py-20 lg:py-32 bg-[#0a0a0a] relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1761971975769-97e598bf526b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxneW0lMjBpbnRlcmlvciUyMG1vZGVybnxlbnwxfHx8fDE3NzE2ODI1MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Visit Us"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/95 to-[#0a0a0a]/85"></div>
-        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="container mx-auto px-4 lg:px-8 relative z-10 text-center"
-        >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6" style={{ fontWeight: 800 }}>
-            Experience It{" "}
-            <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
-              Yourself
-            </span>
-          </h2>
-          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-            Visit our gym for a free tour and see why we're North Malabar's
-            premier fitness destination.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <a
-              href="/membership"
-              className="px-10 py-5 bg-gradient-to-r from-[#86BC25] to-[#FFD700] text-black text-lg rounded-md hover:shadow-2xl hover:shadow-[#86BC25]/50 transition-all duration-300 transform hover:scale-105"
-              style={{ fontWeight: 700 }}
-            >
-              Join Now
-            </a>
-            <a
-              href="/contact"
-              className="px-10 py-5 border-2 border-white text-white text-lg rounded-md hover:bg-white/10 transition-all duration-300 transform hover:scale-105"
-              style={{ fontWeight: 700 }}
-            >
-              Schedule a Tour
-            </a>
-          </div>
-        </motion.div>
-      </section>
     </div>
   );
 }

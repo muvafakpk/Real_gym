@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
@@ -7,6 +7,7 @@ import { Textarea } from "../components/ui/textarea";
 import { Button } from "../components/ui/button";
 import logoImage from "../../assets/TheReal.jpeg";
 import { supabase } from "../../supabase";
+import { useLocation } from "react-router-dom";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -16,6 +17,22 @@ export default function Contact() {
     subject: "",
     message: "",
   });
+const location = useLocation();
+
+useEffect(() => {
+  if (location.hash === "#contact-form") {
+    const element = document.getElementById("contact-form");
+    if (element) {
+      const yOffset = -120; // adjust for navbar height
+      const y =
+        element.getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  }
+}, [location]);
 
 const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
@@ -147,7 +164,10 @@ const handleSubmit = async (e: React.FormEvent) => {
 </section>
 
       {/* Contact Form & Map */}
-      <section className="py-20 lg:py-32 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
+      <section
+  id="contact-form"
+  className="py-20 lg:py-32 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]"
+>
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}

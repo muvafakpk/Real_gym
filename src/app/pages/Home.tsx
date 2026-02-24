@@ -176,7 +176,7 @@ const sliderSettings = {
     >
 
       {/* Small Premium Tag */}
-      <div className="mb-6">
+      <div className="mb-8">
         <span className="px-4 py-1 text-xs tracking-widest uppercase bg-white/10 border border-white/20 rounded-full text-gray-300 backdrop-blur-md">
           North Malabar’s Elite Fitness Club
         </span>
