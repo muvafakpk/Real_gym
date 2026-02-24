@@ -76,12 +76,12 @@ const handleSubmit = async (e: React.FormEvent) => {
     {
       icon: <MapPin className="w-8 h-8" />,
       title: "Visit Us",
-      info: ["North Malabar's Largest Fitness Hub", "Kerala, India", "6400+ sq. ft. of Space"],
+      info: ["Padna orimukk,Kasargod, Kerala,India", "6400+ sq. ft. of Space"],
     },
     {
       icon: <Phone className="w-8 h-8" />,
       title: "Call Us",
-      info: ["+91 9447771658", "+91 9447771658", "Mon-Sat: 5 AM - 10 PM"],
+      info: ["+91 9567371658", "+91 9447771658", "Mon-Sat: 5 AM - 10 PM"],
     },
     {
       icon: <Mail className="w-8 h-8" />,
@@ -322,10 +322,10 @@ const handleSubmit = async (e: React.FormEvent) => {
                         Phone
                       </p>
                       <a
-                        href="tel:+919447771658"
+                        href="tel:+919567371658"
                         className="text-gray-400 hover:text-[#FFD700] transition-colors"
                       >
-                        +91 9447771658
+                        +91 9567371658
                       </a>
                     </div>
                   </div>
@@ -350,7 +350,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                         Location
                       </p>
                       <p className="text-gray-400">
-                        North Malabar, Kerala, India
+                        Padna orimukk,Kasargod, Kerala, India
                       </p>
                     </div>
                   </div>
