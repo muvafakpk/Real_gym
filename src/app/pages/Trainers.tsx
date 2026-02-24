@@ -4,6 +4,9 @@ import sinanImg from "../../assets/sinan.png";
 import sinanImg1 from "../../assets/sanal.png";
 import sinanImg2 from "../../assets/sharanya.png";
 import sinanImg3 from "../../assets/vaishnav.png";
+import sinanImg4 from "../../assets/mubashira.jpeg";
+import sinanImg5 from "../../assets/trainer6.jpeg";
+import sinanImg6 from "../../assets/thabsheera.jpeg";
 import coach from "../../assets/coach.jpeg";
 import { Link } from "react-router-dom";
 
@@ -68,7 +71,7 @@ export default function Trainers() {
   ],
   description:
     "Energetic group fitness instructor specializing in Zumba and aerobics. Passionate about making workouts fun, engaging, and effective for all fitness levels.",
-  image: sinanImg1,
+  image: sinanImg6,
   email: "thabsheera@therealgym.in",
 },
 {
@@ -83,7 +86,7 @@ export default function Trainers() {
   ],
   description:
     "Dedicated personal trainer focused on sustainable weight loss and customized nutrition plans. Helps clients build confidence while achieving long-term results.",
-  image: sinanImg1,
+  image: sinanImg4,
   email: "mubashira@therealgym.in",
 },
 {
@@ -98,7 +101,7 @@ export default function Trainers() {
   ],
   description:
     "Experienced yoga and functional training coach focused on flexibility, mobility, and overall body balance. Helps clients improve posture and prevent injuries.",
-  image: sinanImg1,
+  image: sinanImg5,
   email: "krishnaja@therealgym.in",
 },
    
