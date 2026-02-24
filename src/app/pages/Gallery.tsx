@@ -309,47 +309,7 @@ const galleryRef = useRef<HTMLDivElement | null>(null);
       title: "body",
     },
     
-    {
-      url: "https://images.unsplash.com/photo-1584863431255-3997371dcc01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxneW0lMjBkdW1iYmVsbHMlMjByYWNrfGVufDF8fHx8MTc3MTY2MDk0NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      category: "equipment",
-      title: "Dumbbells Rack",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaXRuZXNzJTIwd2VpZ2h0bGlmdGluZyUyMGJhcmJlbGx8ZW58MXx8fHwxNzcxNjgyNTE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      category: "equipment",
-      title: "Barbell Training Area",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1770493895453-4f758c40d11d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJlbmd0aCUyMHRyYWluaW5nJTIwZXF1aXBtZW50fGVufDF8fHx8MTc3MTYzMzA4MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      category: "equipment",
-      title: "Strength Equipment",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1761971976282-b2bb051a5474?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxneW0lMjBjYXJkaW8lMjB0cmVhZG1pbGx8ZW58MXx8fHwxNzcxNjgyNTE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      category: "equipment",
-      title: "Cardio Zone",
-    },
-    
-   
-   
-   
   
-
-    {
-      url: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1080&h=720&fit=crop",
-      category: "gym",
-      title: "Training Area",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1080&h=720&fit=crop",
-      category: "equipment",
-      title: "Premium Equipment",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1080&h=720&fit=crop",
-      category: "gym",
-      title: "Workout Space",
-    },
 
   ];
 
