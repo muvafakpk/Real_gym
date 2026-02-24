@@ -74,7 +74,7 @@ export default function About() {
   ];
 
  return (
- <div className="bg-[#0a0a0a] pt-10">
+<div className="bg-[#0a0a0a] pt-10 overflow-x-hidden">
   {/* Hero Section */}
   <section className="relative py-32 overflow-hidden">
 

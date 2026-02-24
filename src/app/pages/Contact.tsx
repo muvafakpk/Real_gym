@@ -99,7 +99,7 @@ const handleSubmit = async (e: React.FormEvent) => {
   ];
 
   return (
-    <div className="bg-[#0a0a0a] pt-20">
+   <div className="bg-[#0a0a0a] pt-20 overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
