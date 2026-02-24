@@ -37,15 +37,26 @@ import t22 from "../../assets/t22.jpeg";
 import t23 from "../../assets/t23.jpeg";
 import t24 from "../../assets/t24.jpeg";
 import t25 from "../../assets/t25.jpeg";
-
-
+import g1 from "../../assets/g1.jpeg";
+import g2 from "../../assets/g2.jpeg";
+import g3 from "../../assets/g3.jpeg";
+import g4 from "../../assets/g4.jpeg";
+import g5 from "../../assets/g5.jpeg";
+import g6 from "../../assets/g6.jpeg";
+import g7 from "../../assets/g7.jpeg";
+import g8 from "../../assets/g8.jpeg";
+import g9 from "../../assets/g9.jpeg";
+import g10 from "../../assets/g10.jpeg";
+import g11 from "../../assets/g11.jpeg";
+import g12 from "../../assets/g12.jpeg";
+import member from "../../assets/member.jpeg";
 
 
 
 export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 const galleryRef = useRef<HTMLDivElement | null>(null);
-  const categories = ["all", "body", "equipment",  "transformations"];
+  const categories = ["all", "body", "gym",  "transformations"];
 
   const images = [
     {
@@ -98,6 +109,76 @@ const galleryRef = useRef<HTMLDivElement | null>(null);
       url: body2,
       category: "body",
       title: "body",
+    },
+    {
+      url: g1,
+      category: "gym",
+      title: "gym",
+    },
+    {
+      url: g2,
+      category: "gym",
+      title: "gym",
+    },
+    {
+      url: g3,
+      category: "gym",
+      title: "gym",
+    },
+    {
+      url: g4,
+      category: "gym",
+      title: "gym",
+    },
+    {
+      url: g4,
+      category: "gym",
+      title: "gym",
+    },
+    {
+      url: g5,
+      category: "gym",
+      title: "gym",
+    },
+    {
+      url: g6,
+      category: "gym",
+      title: "gym",
+    },
+    {
+      url: g7,
+      category: "gym",
+      title: "gym",
+    },
+    {
+      url: g8,
+      category: "gym",
+      title: "gym",
+    },
+    {
+      url: g9,
+      category: "gym",
+      title: "gym",
+    },
+    {
+      url: g10,
+      category: "gym",
+      title: "gym",
+    },
+    {
+      url: g11,
+      category: "gym",
+      title: "gym",
+    },
+    {
+      url: g12,
+      category: "gym",
+      title: "gym",
+    },
+    {
+      url: member,
+      category: "gym",
+      title: "gym",
     },
     {
       url: t1,

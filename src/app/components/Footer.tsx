@@ -183,29 +183,62 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-[#2a2a2a] pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-sm text-center md:text-left">
-              © {currentYear} The Real Gym. All rights reserved.
-            </p>
-            <div className="flex space-x-6 text-sm">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-[#86BC25] transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-[#86BC25] transition-colors"
-              >
-                Terms of Service
-              </a>
-            </div>
-          </div>
-        </div>
+    {/* Bottom Bar */}
+<div className="border-t border-[#2a2a2a] pt-8">
+  <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-6 md:space-y-0">
+
+    {/* Left Side */}
+    <div>
+      <p className="text-gray-400 text-sm">
+        © {currentYear} The Real Gym. All rights reserved.
+      </p>
+
+      <p className="text-gray-500 text-xs mt-3">
+        Designed & Developed by{" "}
+        <span className="text-[#86BC25] font-medium">
+          Muvafak P K
+        </span>
+      </p>
+
+      <div className="flex justify-center md:justify-start gap-4 text-xs text-gray-500 mt-2">
+        <a
+          href="tel:+918129886664"
+          className="hover:text-[#FFD700] transition-colors"
+        >
+          +91 8129886664
+        </a>
+
+        <a
+          href="https://instagram.com/mofz.xx"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#FFD700] transition-colors"
+        >
+          @mofz.xx
+        </a>
       </div>
-    </footer>
+    </div>
+
+    {/* Right Side */}
+    <div className="flex space-x-6 text-sm">
+      <a
+        href="#"
+        className="text-gray-400 hover:text-[#86BC25] transition-colors"
+      >
+        Privacy Policy
+      </a>
+      <a
+        href="#"
+        className="text-gray-400 hover:text-[#86BC25] transition-colors"
+      >
+        Terms of Service
+      </a>
+    </div>
+
+  </div>
+</div>
+
+</div> {/* THIS closes container mx-auto */}
+</footer>
   );
 }
