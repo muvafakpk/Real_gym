@@ -120,7 +120,7 @@ export default function Membership() {
         "All Standard features",
         "Unlimited personal training",
         "Customized meal plans",
-        "24/7 gym access",
+        "6 gym access",
         "Free guest passes (4/month)",
         "Body composition analysis",
         "Supplement discounts",

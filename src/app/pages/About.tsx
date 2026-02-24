@@ -3,6 +3,9 @@ import sinanImg from "../../assets/sinan.png";
 import sinanImg1 from "../../assets/sanal.png";
 import sinanImg2 from "../../assets/sharanya.png";
 import sinanImg3 from "../../assets/vaishnav.png";
+import sinanImg4 from "../../assets/mubashira.jpeg";
+import sinanImg5 from "../../assets/trainer6.jpeg";
+import sinanImg6 from "../../assets/thabsheera.jpeg";
 import coach from "../../assets/coach.jpeg";
 import logoImage from "../../assets/real1.png";
 import { Target, Eye, Award, Users, TrendingUp, Heart } from "lucide-react";
@@ -44,20 +47,20 @@ export default function About() {
       name: "Thabsheera",
       role: "Group Fitness Instructor",
       specialty: "Zumba & Aerobics",
-       image: sinanImg2,
+       image: sinanImg6,
     },
    
      {
       name: "Mubashira",
       role: "Personal Training Specialist",
       specialty: "Weight Loss & Nutrition",
-      image: sinanImg1,
+      image: sinanImg4,
     },
      {
       name: "Krishnaja",
       role: "Personal Training Specialist",
       specialty: "Yoga Trainer",
-      image: sinanImg1,
+      image: sinanImg5,
     },
   ];
 
@@ -316,10 +319,12 @@ export default function About() {
               >
                 <div className="relative overflow-hidden rounded-lg mb-4">
                   <img
-                    src={trainer.image}
-                    alt={trainer.name}
-                    className="w-full h-60 object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
+  src={trainer.image}
+  alt={trainer.name}
+  className={`w-full h-72 sm:h-80 lg:h-96 object-cover group-hover:scale-110 transition-transform duration-500 ${
+    trainer.name === "Sanal" ? "lg:object-top" : ""
+  }`}
+/>
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <h3 className="text-2xl text-white mb-2" style={{ fontWeight: 700 }}>
