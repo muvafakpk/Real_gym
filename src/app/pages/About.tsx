@@ -4,6 +4,7 @@ import sinanImg1 from "../../assets/sanal.png";
 import sinanImg2 from "../../assets/sharanya.png";
 import sinanImg3 from "../../assets/vaishnav.png";
 import coach from "../../assets/coach.jpeg";
+import logoImage from "../../assets/real1.png";
 import { Target, Eye, Award, Users, TrendingUp, Heart } from "lucide-react";
 
 export default function About() {
@@ -156,7 +157,7 @@ export default function About() {
           >
             <div className="rounded-lg overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1603665409265-bdc00027c217?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                src={logoImage}
                 alt="The Real Gym"
                 className="w-full h-auto"
               />
