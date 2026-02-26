@@ -23,7 +23,7 @@ export function Newsletter() {
           </div>
 
           <h2
-            className="text-4xl md:text-5xl text-black mb-4"
+            className="text-3xl mb-4 text-black mb-4"
             style={{ fontWeight: 800 }}
           >
             Let’s Start Your Fitness Journey

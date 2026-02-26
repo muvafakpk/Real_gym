@@ -129,7 +129,7 @@ export function Header() {
                   >
                     <Link
                       to={link.path}
-                      className={`text-2xl transition-colors duration-300 ${
+                      className={`text-2xl font-semibold tracking-wide transition-colors duration-300 ${
                         location.pathname === link.path
                           ? "text-[#86BC25]"
                           : "text-white hover:text-[#FFD700]"

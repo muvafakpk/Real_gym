@@ -231,7 +231,7 @@ const sliderSettings = {
 
       {/* Trust Indicators */}
       <div className="flex justify-center gap-6 mt-12 text-gray-500 text-xs sm:text-sm">
-        <span>6400+    Sq. Ft.</span>
+        <span>6400+ Sq. Ft.</span>
         <span>•</span>
         <span>8+ Certified Trainers</span>
         <span>•</span>
@@ -269,7 +269,7 @@ const sliderSettings = {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl mb-4" style={{ fontWeight: 800 }}>
+            <h2 className="text-3xl mb-4" style={{ fontWeight: 800 }}>
               Our{" "}
               <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
                 Services
@@ -288,7 +288,7 @@ const sliderSettings = {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="bg-[#1a1a1a] p-4 rounded-lg border-[#2a2a2a] hover:border-[#86BC25] transition-all duration-300 group hover:transform hover:scale-105"
+                className="bg-[#1a1a1a] p-6 rounded-xl border-[#2a2a2a] hover:border-[#86BC25] transition-all duration-300 group hover:transform hover:scale-105"
               >
                 <div className="text-[#86BC25] mb-6 group-hover:text-[#FFD700] transition-colors">
                   {service.icon}
@@ -312,7 +312,7 @@ const sliderSettings = {
           >
             <Link
               to="/services"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#86BC25] to-[#FFD700] text-black rounded-md hover:shadow-lg hover:shadow-[#86BC25]/50 transition-all duration-300 transform hover:scale-105"
+              className="inline-flex items-center gap-2 px-10 py-4 rounded-xl text-base font-semibold bg-gradient-to-r from-[#86BC25] to-[#FFD700] text-black  hover:shadow-lg hover:shadow-[#86BC25]/50 transition-all duration-300 transform hover:scale-105"
               style={{ fontWeight: 700 }}
             >
               View All Services
@@ -332,7 +332,7 @@ const sliderSettings = {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl md:text-5xl mb-6" style={{ fontWeight: 800 }}>
+              <h2 className="text-3xl mb-4" style={{ fontWeight: 800 }}>
                 Why Choose{" "}
                 <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
                   The Real Gym
@@ -410,7 +410,7 @@ const sliderSettings = {
           transition={{ duration: 0.8 }}
           className="container mx-auto px-4 lg:px-8 relative z-10 text-center"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6" style={{ fontWeight: 800 }}>
+          <h2 className="text-3xl mb-4:text-6xl mb-6" style={{ fontWeight: 800 }}>
             Ready to Start Your{" "}
             <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
               Transformation

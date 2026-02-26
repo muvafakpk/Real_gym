@@ -93,7 +93,7 @@ export default function About() {
       transition={{ duration: 0.8 }}
       className="container mx-auto px-4 lg:px-8 relative z-10 text-center"
     >
-      <h1 className="text-5xl md:text-6xl lg:text-7xl mb-6 font-extrabold">
+      <h1 className="text-3xl mb-4 lg:text-7xl mb-6 font-extrabold">
         About{" "}
         <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
           The Real Gym
@@ -108,7 +108,7 @@ export default function About() {
   </section>
 
 {/* Our Story Section */}
-<section className="py-10 lg:py-32 bg-[#0a0a0a]">
+<section className="py+2 lg:py-32 bg-[#0a0a0a]">
   <div className="container mx-auto px-4 lg:px-8">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
@@ -131,7 +131,7 @@ export default function About() {
     </div>
 
     {/* Centered Heading */}
-    <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-white">
+    <h2 className="text-3xl mb-4 font-extrabold mb-8 text-white">
       Our{" "}
       <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
         Story
@@ -205,7 +205,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-[#1a1a1a] p-10 rounded-lg border border-[#2a2a2a]"
+              className="bg-[#1a1a1a] p-10 rounded-2xl border border-[#2a2a2a] shadow-xl hover:shadow-[#86BC25]/20 transition-all duration-300"
             >
               <div className="w-16 h-16 bg-gradient-to-r from-[#86BC25] to-[#FFD700] rounded-lg flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-black" />
@@ -255,7 +255,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl mb-4" style={{ fontWeight: 800 }}>
+            <h2 className="text-3xl mb-4" style={{ fontWeight: 800 }}>
               Our{" "}
               <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
                 Achievements
@@ -296,7 +296,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl mb-4" style={{ fontWeight: 800 }}>
+            <h2 className="text-3xl mb-4" style={{ fontWeight: 800 }}>
               Meet Our{" "}
               <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
                 Expert Trainers
@@ -317,7 +317,7 @@ export default function About() {
                 transition={{ delay: index * 0.1, duration: 0.6 }}
                 className="group"
               >
-                <div className="relative overflow-hidden rounded-lg mb-4">
+                <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl mb-4">
                   <img
   src={trainer.image}
   alt={trainer.name}
@@ -330,7 +330,7 @@ export default function About() {
                 <h3 className="text-2xl text-white mb-2" style={{ fontWeight: 700 }}>
                   {trainer.name}
                 </h3>
-                <p className="text-[#86BC25] mb-2">{trainer.role}</p>
+                <p className="te4xt-[#86BC25] mb-2">{trainer.role}</p>
                 <p className="text-gray-400">{trainer.specialty}</p>
               </motion.div>
             ))}
@@ -340,7 +340,7 @@ export default function About() {
 
       {/* Certifications */}
       <section className="py-20 lg:py-32 bg-[#0a0a0a]">
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="container mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -348,7 +348,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl mb-4" style={{ fontWeight: 800 }}>
+            <h2 className="text-3xl mb-4" style={{ fontWeight: 800 }}>
               Our{" "}
               <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
                 Certifications
