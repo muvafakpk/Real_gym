@@ -60,53 +60,53 @@ const galleryRef = useRef<HTMLDivElement | null>(null);
 
   const images = [
     {
-      url: body1,
+      url: "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/body1-imagetourl.cloud-1772133344060-fp1fps.jpeg",
       category: "body",
       title: "body",
     },
       {
-      url: body10,
+      url: "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/body10-imagetourl.cloud-1772133377122-it3tyf.jpeg",
       category: "body",
       title: "body",
     },
       
       {
-      url: body9,
+      url: "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/body9-imagetourl.cloud-1772133369836-9v9zcg.jpeg",
       category: "body",
       title: "body",
     },
       {
-      url: body8,
+      url: "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/body8-imagetourl.cloud-1772133367342-cdnh03.jpeg",
       category: "body",
       title: "body",
     },
       {
-      url: body7,
+      url: "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/body7-imagetourl.cloud-1772133361136-prr0zv.jpeg",
       category: "body",
       title: "body",
     },
       {
-      url: body6,
+      url: "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/body6-imagetourl.cloud-1772133358773-xjfmuh.jpeg",
       category: "body",
       title: "body",
     },
       {
-      url: body5,
+      url: "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/body5-imagetourl.cloud-1772133356167-0kog92.jpeg",
       category: "body",
       title: "body",
     },
       {
-      url: body4,
+      url: "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/body4-imagetourl.cloud-1772133353127-cnq0r8.jpeg",
       category: "body",
       title: "body",
     },
       {
-      url: body3,
+      url: "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/body3-imagetourl.cloud-1772133350036-utd0kg.jpeg",
       category: "body",
       title: "body",
     },
       {
-      url: body2,
+      url: "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/body2-imagetourl.cloud-1772133346726-9zpmbf.jpeg",
       category: "body",
       title: "body",
     },
