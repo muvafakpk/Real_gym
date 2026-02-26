@@ -204,30 +204,34 @@ const sliderSettings = {
       {/* CTA Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
 
-        <Link
-          to="/membership"
-          className="w-full sm:w-auto px-8 py-4 rounded-xl text-black font-semibold text-base
-          bg-gradient-to-r from-[#86BC25] to-[#FFD700]
-          hover:scale-105 transition-all duration-300
-          shadow-lg hover:shadow-[#86BC25]/40"
-        >
-          Get Started Now →
-        </Link>
+       <Link
+  to="/membership"
+  className="w-full sm:w-auto h-14 px-10 rounded-xl 
+  text-black font-semibold text-lg
+  bg-gradient-to-r from-[#86BC25] to-[#FFD700]
+  hover:scale-105 transition-all duration-300
+  shadow-lg hover:shadow-[#86BC25]/40
+  flex items-center justify-center"
+>
+  Get Started Now →
+</Link>
 
-        <Link
-          to="/contact"
-          className="w-full sm:w-auto px-8 py-4 rounded-xl text-white font-semibold text-base
-          border border-white/20 bg-white/5 backdrop-blur-md
-          hover:bg-white/10 transition-all duration-300"
-        >
-          Send Message
-        </Link>
+<Link
+  to="/contact"
+  className="w-full sm:w-auto h-14 px-10 rounded-xl 
+  text-white font-medium text-base
+  border border-white/20 bg-white/5 backdrop-blur-md
+  hover:bg-white/10 transition-all duration-300
+  flex items-center justify-center"
+>
+  Send Message
+</Link>
 
       </div>
 
       {/* Trust Indicators */}
       <div className="flex justify-center gap-6 mt-12 text-gray-500 text-xs sm:text-sm">
-        <span>6400+ Sq.Ft</span>
+        <span>6400+    Sq. Ft.</span>
         <span>•</span>
         <span>8+ Certified Trainers</span>
         <span>•</span>
