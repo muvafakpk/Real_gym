@@ -30,112 +30,67 @@ export default function Membership() {
     });
   };
 
-  const monthlyPlans = [
-    {
-      name: "Basic",
-      price: "999",
-      savings: null,
-      features: [
-        "Access to gym equipment",
-        "Locker facility",
-        "Basic fitness assessment",
-        "Group class access",
-        "Standard hours access",
-      ],
-      notIncluded: ["Personal training", "Nutrition consultation", "24/7 access"],
-      popular: false,
-    },
-    {
-      name: "Standard",
-      price: "1,999",
-      savings: null,
-      features: [
-        "All Basic features",
-        "Personal training (2 sessions/month)",
-        "Nutrition consultation",
-        "Extended hours access",
-        "Free guest pass (1/month)",
-        "Priority equipment access",
-      ],
-      notIncluded: ["Unlimited personal training", "24/7 access"],
-      popular: true,
-    },
-    {
-      name: "Premium",
-      price: "3,499",
-      savings: null,
-      features: [
-        "All Standard features",
-        "Unlimited personal training",
-        "Customized meal plans",
-        "24/7 gym access",
-        "Free guest passes (4/month)",
-        "Body composition analysis",
-        "Supplement discounts",
-        "Priority support",
-      ],
-      notIncluded: [],
-      popular: false,
-    },
-  ];
+ const membershipPlans = [
+  {
+    name: "Regular Membership",
+    monthlyFee: "1000",
+    admissionFee: "500 (One-time, first month only)",
+    features: [
+      "Full access to all gym equipment",
+      "Locker facility",
+      "Standard gym hours access",
+    ],
+    optionalAddOns: [
+      "Treadmill access – 200/month",
+    ],
+    popular: true,
+  },
+  {
+    name: "Student Membership",
+    monthlyFee: "800",
+    admissionFee: "500 (One-time, first month only)",
+    features: [
+      "Full access to all gym equipment",
+      "Locker facility",
+      "Standard gym hours access",
+      "Special discounted price for students",
+    ],
+    optionalAddOns: [
+      "Treadmill access – 200/month",
+    ],
+    popular: false,
+  },
+];
 
-  const yearlyPlans = [
-    {
-      name: "Basic",
-      price: "9,999",
-      originalPrice: "11,988",
-      savings: "1,989",
-      features: [
-        "Access to gym equipment",
-        "Locker facility",
-        "Basic fitness assessment",
-        "Group class access",
-        "Standard hours access",
-      ],
-      notIncluded: ["Personal training", "Nutrition consultation", "24/7 access"],
-      popular: false,
-    },
-    {
-      name: "Standard",
-      price: "19,999",
-      originalPrice: "23,988",
-      savings: "3,989",
-      features: [
-        "All Basic features",
-        "Personal training (2 sessions/month)",
-        "Nutrition consultation",
-        "Extended hours access",
-        "Free guest pass (1/month)",
-        "Priority equipment access",
-      ],
-      notIncluded: ["Unlimited personal training", "24/7 access"],
-      popular: true,
-    },
-    {
-      name: "Premium",
-      price: "34,999",
-      originalPrice: "41,988",
-      savings: "6,989",
-      features: [
-        "All Standard features",
-        "Unlimited personal training",
-        "Customized meal plans",
-        "6 gym access",
-        "Free guest passes (4/month)",
-        "Body composition analysis",
-        "Supplement discounts",
-        "Priority support",
-      ],
-      notIncluded: [],
-      popular: false,
-    },
-  ];
+const personalTrainingPlan = {
+  name: "Personal Training",
+  monthlyFee: "5000",
+  admissionFee: null,
+  features: [
+    "Dedicated personal trainer",
+    "Customized workout plan",
+    "Fitness progress tracking",
+    "Diet guidance support",
+  ],
+  optionalAddOns: [],
+  popular: false,
+};
 
   const [selectedDuration, setSelectedDuration] = useState<"monthly" | "yearly">(
     "monthly"
   );
-  const plans = selectedDuration === "monthly" ? monthlyPlans : yearlyPlans;
+const plans = [
+  membershipPlans[0],          // Regular
+  personalTrainingPlan,        // Personal Training
+  membershipPlans[1],          // Student
+];
+const getYearlyPrice = (monthly: number) => {
+  const yearly = monthly * 12;
+  const discount = yearly * 0.1;
+  const final = yearly - discount;
 
+  return final.toLocaleString("en-IN");
+};
   return (
     <div className="bg-[#0a0a0a] pt-20">
       {/* Hero Section */}
@@ -201,7 +156,7 @@ export default function Membership() {
         >
           Yearly
           <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
-            Save 20%
+            Save 10%
           </span>
         </button>
       </div>
@@ -213,7 +168,7 @@ export default function Membership() {
 {/* Pricing Plans */}
 <section className="py-20 lg:py-32 bg-[#0a0a0a]">
   <div className="container mx-auto px-4 lg:px-8">
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 max-w-7xl mx-auto">
       {plans.map((plan, index) => (
         <motion.div
           key={`${selectedDuration}-${index}`}
@@ -232,30 +187,30 @@ export default function Membership() {
             </div>
           )}
 
-          <div className="p-8 pb-6">
-            <h3 className="text-3xl mb-2 text-white font-extrabold">
+         <div className="p-5">
+            <h3 className="text-xl md:text-3xl mb-2 text-white font-extrabold">
               {plan.name}
             </h3>
 
             <div className="mb-6">
-              {plan.originalPrice && (
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-2xl text-gray-500 line-through">
-                    ₹{plan.originalPrice}
-                  </span>
-                  <span className="bg-red-500 text-white text-xs px-2 py-1 rounded font-bold">
-                    Save ₹{plan.savings}
-                  </span>
-                </div>
-              )}
+             
 
               <div className="flex items-end">
-                <span className="text-5xl text-[#86BC25] font-extrabold">
-                  ₹{plan.price}
-                </span>
-                <span className="text-gray-400 ml-2 mb-2">
-                  /{selectedDuration === "monthly" ? "month" : "year"}
-                </span>
+      {selectedDuration === "monthly" ? (
+  <>
+  <span className="text-3xl md:text-5xl text-[#86BC25] font-extrabold tabular-nums">
+      ₹{plan.monthlyFee}
+    </span>
+    <span className="text-gray-400 ml-2 mb-2">/month</span>
+  </>
+) : (
+  <>
+    <span className="text-3xl md:text-5xl text-[#86BC25] font-extrabold tabular-nums">
+  ₹{getYearlyPrice(Number(plan.monthlyFee))}
+</span>
+    <span className="text-gray-400 ml-2 mb-2">/year</span>
+  </>
+)}
               </div>
             </div>
 
@@ -263,16 +218,11 @@ export default function Membership() {
               {plan.features.map((feature, idx) => (
                 <div key={idx} className="flex items-start space-x-3">
                   <Check className="w-5 h-5 text-[#86BC25] flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-300">{feature}</span>
+                  <span className="text-gray-300 text-sm md:text-base">{feature}</span>
                 </div>
               ))}
 
-              {plan.notIncluded.map((feature, idx) => (
-                <div key={idx} className="flex items-start space-x-3 opacity-50">
-                  <X className="w-5 h-5 text-gray-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-500">{feature}</span>
-                </div>
-              ))}
+              
             </div>
           </div>
         </motion.div>
