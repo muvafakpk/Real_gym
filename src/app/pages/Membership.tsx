@@ -212,6 +212,11 @@ const getYearlyPrice = (monthly: number) => {
   </>
 )}
               </div>
+              {selectedDuration === "monthly" && plan.admissionFee && (
+  <p className="text-xs text-gray-400 mt-1">
+    + ₹500 admission fee (first month only)
+  </p>
+)}
             </div>
 
             <div className="space-y-4">
@@ -222,7 +227,13 @@ const getYearlyPrice = (monthly: number) => {
                 </div>
               ))}
 
-              
+              {plan.optionalAddOns.length > 0 && (
+  <div className="mt-3 border-t border-[#2a2a2a] pt-3">
+    <p className="text-xs text-yellow-400">
+      Treadmill access available – ₹200/month
+    </p>
+  </div>
+)}
             </div>
           </div>
         </motion.div>
