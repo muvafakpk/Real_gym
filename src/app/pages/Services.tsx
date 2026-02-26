@@ -153,39 +153,39 @@ export default function Services() {
 
   return (
     <div className="bg-[#0a0a0a] pt-20">
-      {/* Hero Section */}
-      <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1584863431255-3997371dcc01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxneW0lMjBkdW1iYmVsbHMlMjByYWNrfGVufDF8fHx8MTc3MTY2MDk0NHww&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Services"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/95 to-[#0a0a0a]/80"></div>
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="container mx-auto px-4 lg:px-8 relative z-10"
-        >
-          <h1 className="text-5xl md:text-6xl lg:text-7xl mb-6" style={{ fontWeight: 800 }}>
-            Our{" "}
-            <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
-              Services
-            </span>
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl">
-            Comprehensive fitness programs designed to meet every goal
-          </p>
-        </motion.div>
-      </section>
+          {/* Hero Section */}
+          <section className="relative py-32 overflow-hidden">
+            <div className="absolute inset-0">
+              <img
+                src="https://images.unsplash.com/photo-1584863431255-3997371dcc01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxneW0lMjBkdW1iYmVsbHMlMjByYWNrfGVufDF8fHx8MTc3MTY2MDk0NHww&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Services"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/95 to-[#0a0a0a]/80"></div>
+            </div>
+    
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="container mx-auto px-4 lg:px-8 relative z-10"
+            >
+              <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6" style={{ fontWeight: 800 }}>
+                Our{" "}
+                <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
+                  Services
+                </span>
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-300 max-w-3xl">
+                Comprehensive fitness programs designed to meet every goal
+              </p>
+            </motion.div>
+          </section>
 
       {/* Services List */}
-      <section className="py-20 lg:py-32 bg-[#0a0a0a]">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="space-y-32">
+      <section className="py-16 lg:py-28 bg-[#0a0a0a]">
+        <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
+          <div className="space-y-20 lg:space-y-32">
             {services.map((service, index) => (
               <motion.div
                 key={index}
@@ -198,8 +198,8 @@ export default function Services() {
                 }`}
               >
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                  <div className="text-[#86BC25] mb-6">{service.icon}</div>
-                  <h2 className="text-4xl md:text-5xl mb-6" style={{ fontWeight: 800 }}>
+                  <div className="text-[#86BC25] mb-6 max-w-2xl mx-auto lg:mx-0">{service.icon}</div>
+                  <h2 className="text-3xl mb-4" style={{ fontWeight: 800 }}>
                     {service.title}
                   </h2>
                   <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -209,21 +209,25 @@ export default function Services() {
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center space-x-3">
                         <Check className="w-6 h-6 text-[#86BC25] flex-shrink-0" />
-                        <span className="text-gray-300 text-lg">{feature}</span>
+                        <span className="text-gray-300 text-base md:text-lg">{feature}</span>
                       </li>
                     ))}
                   </ul>
                   <Link
-                    to="/membership"
-                    className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#86BC25] to-[#FFD700] text-black rounded-md hover:shadow-lg hover:shadow-[#86BC25]/50 transition-all duration-300 transform hover:scale-105"
-                    style={{ fontWeight: 700 }}
-                  >
-                    Get Started
-                    <ArrowRight className="w-5 h-5" />
-                  </Link>
+  to="/membership"
+  className="px-10 py-4 rounded-xl 
+  text-base md:text-lg font-semibold 
+  bg-gradient-to-r from-[#86BC25] to-[#FFD700] 
+  text-black 
+  shadow-lg hover:shadow-[#86BC25]/40 
+  transition-all duration-300 
+  inline-flex items-center gap-2"
+>
+  Get Started
+</Link>
                 </div>
                 <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                  <div className="relative rounded-lg overflow-hidden shadow-2xl">
+                  <div className="relative rounded-1g border border-[#2a2a2a] shadow-2xl">
                     <img
                       src={service.image}
                       alt={service.title}

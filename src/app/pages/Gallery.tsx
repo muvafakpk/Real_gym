@@ -337,7 +337,7 @@ const galleryRef = useRef<HTMLDivElement | null>(null);
           transition={{ duration: 0.8 }}
           className="container mx-auto px-4 lg:px-8 relative z-10"
         >
-          <h1 className="text-5xl md:text-6xl lg:text-7xl mb-6" style={{ fontWeight: 800 }}>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6" style={{ fontWeight: 800 }}>
             Our{" "}
             <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
               Gallery

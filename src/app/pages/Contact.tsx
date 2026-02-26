@@ -117,7 +117,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           transition={{ duration: 0.8 }}
           className="container mx-auto px-4 lg:px-8 relative z-10"
         >
-          <h1 className="text-5xl md:text-6xl lg:text-7xl mb-6" style={{ fontWeight: 800 }}>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6" style={{ fontWeight: 800 }}>
             Get in{" "}
             <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
               Touch
@@ -373,7 +373,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl mb-4" style={{ fontWeight: 800 }}>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl mb-6" style={{ fontWeight: 800 }}>
               Frequently Asked{" "}
               <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
                 Questions
