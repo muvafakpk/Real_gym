@@ -340,7 +340,7 @@ const galleryRef = useRef<HTMLDivElement | null>(null);
           <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6" style={{ fontWeight: 800 }}>
             Our{" "}
             <span className="bg-gradient-to-r from-[#86BC25] to-[#FFD700] bg-clip-text text-transparent">
-              Gallery
+              Galleryy
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl">
