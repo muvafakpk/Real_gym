@@ -151,7 +151,7 @@ const sliderSettings = {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
-            src={logoImage1}
+            src={"https://res.cloudinary.com/di0bcylsr/image/upload/v1772175385/Gymimg_kk8y5h.jpg"}
             alt="Gym Background"
             className="w-full h-full object-cover"
           />
