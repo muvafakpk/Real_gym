@@ -23,44 +23,44 @@ export default function About() {
       name: "Abu Sinaan",
       role: "Founder & Head Trainer",
       specialty: "Strength & Conditioning",
-       image: sinanImg,
+       image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154730/WhatsApp_Image_2026-02-21_at_11.41.30_PM_qjbwqu.jpg",
     },
     {
       name: "Vaishnav",
       role: "Personal Training Specialist",
       specialty: "Weight Loss & Nutrition",
-      image: sinanImg3,
+      image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154724/vaishnav_sggbai.jpg",
     },
     {
       name: "Sanal",
       role: "Personal Training Specialist",
       specialty: "Weight Loss & Nutrition",
-      image: sinanImg1,
+      image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154737/sanal_bidcpg.jpg",
     },
     {
       name: "Sharanya",
       role: "Personal Training Specialist",
       specialty: "Weight Loss & Nutrition",
-       image: sinanImg2,
+       image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154937/sharanya1_jucy7f.jpg",
     },
      {
       name: "Thabsheera",
       role: "Group Fitness Instructor",
       specialty: "Zumba & Aerobics",
-       image: sinanImg6,
+       image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154747/thabsheera_eqksdv.jpg",
     },
    
      {
       name: "Mubashira",
       role: "Personal Training Specialist",
       specialty: "Weight Loss & Nutrition",
-      image: sinanImg4,
+      image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154752/mubashira_nhzm5m.jpg",
     },
      {
       name: "Krishnaja",
       role: "Personal Training Specialist",
       specialty: "Yoga Trainer",
-      image: sinanImg5,
+      image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154760/trainer6_dv5w1g.jpg",
     },
   ];
 

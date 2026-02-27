@@ -20,7 +20,7 @@ export default function Trainers() {
       certifications: ["ACE Certified", "CrossFit Level 2", "Nutrition Specialist"],
       description:
         "Founder of The Real Gym with over a decade of experience in transforming lives through fitness. Specialized in strength training and functional fitness.",
-     image: sinanImg,
+     image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154730/WhatsApp_Image_2026-02-21_at_11.41.30_PM_qjbwqu.jpg",
       instagram: "@abu_sinaan",
       email: "abu@therealgym.in",
     },
@@ -32,7 +32,7 @@ export default function Trainers() {
       certifications: ["NASM Certified", "Nutrition Coach", "TRX Instructor"],
       description:
         "Expert in weight loss and body transformation programs. Has helped over 500 clients achieve their fitness goals with personalized training plans.",
-      image: sinanImg3,
+      image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154724/vaishnav_sggbai.jpg",
       email: "arjun@therealgym.in",
     },
      {
@@ -43,7 +43,7 @@ export default function Trainers() {
       certifications: ["NSCA Certified", "Olympic Lifting Coach", "Sports Nutrition"],
       description:
         "Former competitive powerlifter with expertise in strength training and muscle building. Focuses on proper form and progressive overload.",
-      image: sinanImg1,
+      image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154737/sanal_bidcpg.jpg",
   
       email: "rajesh@therealgym.in",
            objectPosition: "object-[center_top]"
@@ -56,7 +56,7 @@ export default function Trainers() {
       certifications: ["Zumba Certified", "Aerobics Instructor", "Dance Fitness"],
       description:
         "Brings high energy and passion to every class. Specialized in group fitness programs including Zumba, Aerobics, and dance-based workouts.",
-      image: sinanImg2,
+      image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154937/sharanya1_jucy7f.jpg",
       instagram: "@priya_fitness",
       email: "priya@therealgym.in",
     },
@@ -73,7 +73,7 @@ export default function Trainers() {
   ],
   description:
     "Energetic group fitness instructor specializing in Zumba and aerobics. Passionate about making workouts fun, engaging, and effective for all fitness levels.",
-  image: sinanImg6,
+  image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154747/thabsheera_eqksdv.jpg",
   email: "thabsheera@therealgym.in",
 },
 {
@@ -88,7 +88,7 @@ export default function Trainers() {
   ],
   description:
     "Dedicated personal trainer focused on sustainable weight loss and customized nutrition plans. Helps clients build confidence while achieving long-term results.",
-  image: sinanImg4,
+  image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154752/mubashira_nhzm5m.jpg",
   email: "mubashira@therealgym.in",
 },
 {
@@ -103,7 +103,7 @@ export default function Trainers() {
   ],
   description:
     "Experienced yoga and functional training coach focused on flexibility, mobility, and overall body balance. Helps clients improve posture and prevent injuries.",
-  image: sinanImg5,
+  image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154760/trainer6_dv5w1g.jpg",
   email: "krishnaja@therealgym.in",
 },
    
