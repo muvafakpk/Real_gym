@@ -28,23 +28,24 @@ export default function Trainers() {
       name: "Vaishnav",
       role: "Personal Training Specialist",
       specialty: "Weight Loss & Body Transformation",
-      experience: "8 Years",
+      experience: "4 Years",
       certifications: ["NASM Certified", "Nutrition Coach", "TRX Instructor"],
       description:
         "Expert in weight loss and body transformation programs. Has helped over 500 clients achieve their fitness goals with personalized training plans.",
       image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154724/vaishnav_sggbai.jpg",
-      email: "arjun@therealgym.in",
+       instagram: "@__.vaishnav.__",
+      email: "vaishnav@therealgym.in",
     },
      {
       name: "Sanal",
       role: "Strength & Conditioning Coach",
       specialty: "Powerlifting & Muscle Building",
-      experience: "7 Years",
+      experience: "5 Years",
       certifications: ["NSCA Certified", "Olympic Lifting Coach", "Sports Nutrition"],
       description:
         "Former competitive powerlifter with expertise in strength training and muscle building. Focuses on proper form and progressive overload.",
       image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154737/sanal_bidcpg.jpg",
-  
+       instagram: "@sanal_narayanan_",
       email: "rajesh@therealgym.in",
            objectPosition: "object-[center_top]"
     },
@@ -52,12 +53,12 @@ export default function Trainers() {
       name: "Sharanya",
       role: "Group Fitness Instructor",
       specialty: "Zumba & Aerobics",
-      experience: "6 Years",
+      experience: "2 Years",
       certifications: ["Zumba Certified", "Aerobics Instructor", "Dance Fitness"],
       description:
         "Brings high energy and passion to every class. Specialized in group fitness programs including Zumba, Aerobics, and dance-based workouts.",
       image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154937/sharanya1_jucy7f.jpg",
-      instagram: "@priya_fitness",
+      instagram: "@_fits_____",
       email: "priya@therealgym.in",
     },
    
@@ -65,7 +66,7 @@ export default function Trainers() {
   name: "Thabsheera",
   role: "Group Fitness Instructor",
   specialty: "Zumba & Aerobics",
-  experience: "4 Years",
+  experience: "8 Years",
   certifications: [
     "Certified Zumba Instructor",
     "Aerobics Trainer Certification",
@@ -74,6 +75,7 @@ export default function Trainers() {
   description:
     "Energetic group fitness instructor specializing in Zumba and aerobics. Passionate about making workouts fun, engaging, and effective for all fitness levels.",
   image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154747/thabsheera_eqksdv.jpg",
+   instagram: "@_.thabsheeeyy",
   email: "thabsheera@therealgym.in",
 },
 {
@@ -89,13 +91,14 @@ export default function Trainers() {
   description:
     "Dedicated personal trainer focused on sustainable weight loss and customized nutrition plans. Helps clients build confidence while achieving long-term results.",
   image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772154752/mubashira_nhzm5m.jpg",
+   instagram: "@_sina.mubi",
   email: "mubashira@therealgym.in",
 },
 {
   name: "Krishnaja",
   role: "Personal Training Specialist",
   specialty: "Yoga & Functional Training",
-  experience: "6 Years",
+  experience: "3 Years",
   certifications: [
     "Certified Yoga Trainer",
     "Functional Training Coach",

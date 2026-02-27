@@ -31,7 +31,7 @@ export default function Services() {
         "Flexible scheduling",
         "Form correction",
       ],
-      image:sinan,
+      image:"https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772173644/personal_dsxa6l.jpg",
     },
     {
       icon: <TrendingDown className="w-16 h-16" />,
@@ -45,7 +45,7 @@ export default function Services() {
         "Weekly progress reviews",
         "Lifestyle coaching",
       ],
-      image:sinan1,
+      image:"https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772173619/loss_hxngtb.jpg",
     },
     {
       icon: <TrendingUp className="w-16 h-16" />,
@@ -59,7 +59,7 @@ export default function Services() {
         "Recovery protocols",
         "Strength assessments",
       ],
-      image: sinan2,
+      image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772173632/muscle_nohltu.jpg",
     },
     {
       icon: <Heart className="w-16 h-16" />,
@@ -73,7 +73,7 @@ export default function Services() {
         "Heart rate monitoring",
         "Endurance building",
       ],
-      image:sinan3,
+      image:"https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772173652/gymman_m0bmyi.jpg",
     },
     {
       icon: <Zap className="w-16 h-16" />,
@@ -101,7 +101,7 @@ export default function Services() {
         "Dance fitness",
         "Community motivation",
       ],
-      image: sinan4,
+      image: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772173675/group_ggdoyw.jpg",
     },
   ];
 

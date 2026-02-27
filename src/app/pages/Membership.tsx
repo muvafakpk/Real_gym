@@ -97,7 +97,7 @@ const getYearlyPrice = (monthly: number) => {
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={member}
+            src={"https://res.cloudinary.com/di0bcylsr/image/upload/v1772174968/member_hgelnm.jpg"}
             alt="Membership"
             className="w-full h-full object-cover"
           />

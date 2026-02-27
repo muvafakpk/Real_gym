@@ -187,7 +187,7 @@ const galleryRef = useRef<HTMLDivElement | null>(null);
       title: "gym",
     },
     {
-      url: member,
+      url: "https://res.cloudinary.com/di0bcylsr/image/upload/w_auto,q_auto,f_auto/v1772174968/member_hgelnm.jpg",
       category: "gym",
       title: "gym",
     },
